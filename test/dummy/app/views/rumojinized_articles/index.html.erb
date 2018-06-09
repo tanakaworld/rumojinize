@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rumojinized Articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rumojinized_articles.each do |rumojinized_article| %>
+      <tr>
+        <td><%= rumojinized_article.body %></td>
+        <td><%= link_to 'Show', rumojinized_article %></td>
+        <td><%= link_to 'Edit', edit_rumojinized_article_path(rumojinized_article) %></td>
+        <td><%= link_to 'Destroy', rumojinized_article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rumojinized Article', new_rumojinized_article_path %>

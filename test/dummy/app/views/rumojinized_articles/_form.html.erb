@@ -1,0 +1,22 @@
+<%= form_with(model: rumojinized_article, local: true) do |form| %>
+  <% if rumojinized_article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rumojinized_article.errors.count, "error") %> prohibited this rumojinized_article from being saved:</h2>
+
+      <ul>
+      <% rumojinized_article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :rumojinized_article_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
