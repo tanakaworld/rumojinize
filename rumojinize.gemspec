@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors = ["tanakaworld"]
   s.email = ["yutaro.tanaka.world@gmail.com"]
 
-  s.summary = %q{ActiveRecord plugin make you easily store the data includes emoji to DB.}
-  s.description = %q{ActiveRecord plugin make you easily store the data includes emoji to DB.}
+  s.summary = %q{🐶ActiveRecord plugin make you easily store emoji to DB.}
+  s.description = %q{🐶ActiveRecord plugin make you easily store emoji to DB.}
   s.homepage = "http://tanakaworld.github.io/rumojinize"
   s.license = "MIT"
 

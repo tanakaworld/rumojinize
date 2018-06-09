@@ -1,6 +1,11 @@
-# Rumojinize
+# 🐶Rumojinize
 
-"Rumojinize" is support to save and use the emoji as utf8 plane text.
+This is an ActiveRecord plugin make you easily store emoji to DB.
+
+Supporting:
+
+- Encode emoji to UTF8 text before save. `🐶`->`:dog:`
+- Decode encoded emoji in the instance of model. `:dog:`->`🐶`
 
 ## Concept
 
@@ -9,34 +14,41 @@ In order to store the emoji to your Database, we need following steps.
 - Change the charset from `utf8` to `utf8mb4`.
 - Upgrade MySQL version greater than `5.5`.
 
-But "Rumojinize" make it simply !!
+But "Rumojinize" make it simple!!
 
 ## Usage
 
 **Install gem:**
 
-```ruby
+```
 gem 'rumojinize'
 ```
 
-```ruby
+```
 bundle install
 ```
 
-**Make field which includes emoji.**
+**Set up by `rumojinize`.**
 
-```ruby
+```
 class Article < ApplicationRecord
   rumojinize :body
 end
 ```
 
-**Rumojinize will convert `🐶` to `:dog:` as plain text.**
+Also you can rumojinize multiple fields.
 
-```ruby
-article = Article.new(body: 'I love 🐶s.')
-article.save
 ```
+class Article < ApplicationRecord
+  rumojinize :body, :title
+end
+```
+
+## Example
+
+**For example, Rumojinize will encode `🐶` to `:dog:` before save to DB, and decode in the instance.**
+
+![image](https://user-images.githubusercontent.com/3489430/41193342-a5b264de-6c45-11e8-96b4-d1818ca2779e.png)
 
 ## Dependencies
 
