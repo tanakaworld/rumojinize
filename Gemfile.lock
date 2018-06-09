@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    rumojinize (0.1.1)
+    rumojinize (0.1.2)
       rails
+      rumoji
 
 GEM
   remote: https://rubygems.org/
