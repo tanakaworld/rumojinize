@@ -1,3 +1,7 @@
+require 'rumojinize/version'
+require 'rumojinize/core'
+
 module Rumojinize
-  # Your code goes here...
 end
+
+ActiveRecord::Base.send :include, Rumojinize::Core
