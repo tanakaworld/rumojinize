@@ -1,3 +1,5 @@
+require 'rumoji'
+
 module Rumojinize::Core
   extend ActiveSupport::Concern
 
