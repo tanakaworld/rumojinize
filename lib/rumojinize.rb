@@ -1,0 +1,3 @@
+module Rumojinize
+  # Your code goes here...
+end
