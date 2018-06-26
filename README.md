@@ -1,6 +1,7 @@
 # 🐶Rumojinize
 
 [![CircleCI](https://circleci.com/gh/tanakaworld/rumojinize/tree/master.svg?style=svg)](https://circleci.com/gh/tanakaworld/rumojinize/tree/master)
+[![Gem Version](https://badge.fury.io/rb/rumojinize.svg)](https://badge.fury.io/rb/rumojinize)
 
 This is an ActiveRecord plugin make you easily store emoji to DB.
 
