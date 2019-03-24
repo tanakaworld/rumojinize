@@ -13,3 +13,5 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 gem 'rumoji'
+
+gem 'sqlite3', '~> 1.3.6', group: [:development, :test]
