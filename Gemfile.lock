@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rumojinize (0.3.0)
+    rumojinize (0.3.1)
       rails
       rumoji
 
